@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+
+
+        <div class='question-wrap'>
+        <div class="question-and-toggle">
+        <div class='question'>
+          Question
+        </div>
+       
+         <div class='toggle'>
+           >
+         </div>
+        
+        </div>
+         
+         <div class='answer'>
+         Answer
+         </div>
+          
+        </div>
+      
+        <div class='question-wrap'>
+        <div class="question-and-toggle">
+          <div class='question'>
+          Question
+        </div>
+       
+         <div class='toggle'>
+           >
+         </div>
+        </div>
+         
+         <div class='answer'>
+         Answer
+         </div>
+          
+        </div>
+      
+        <div class='question-wrap'>
+         <div class="question-and-toggle">
+          <div class='question'>
+          Question
+        </div>
+       
+         <div class='toggle'>
+           >
+         </div>
+        </div>
+         
+         <div class='answer'>
+         Answer
+         </div>
+          
+        </div>
+      
+      </div>
+</body>
+<script>
+window.addEventListener("DOMContentLoaded", (event) => {
+  const toggle = document.querySelectorAll('.toggle')
+  
+  toggle.forEach(element => element.addEventListener('click', () => {
+  element.parentNode.parentNode.classList.toggle('active')
+  }))
+});
+</script>
+</html>
